@@ -10,5 +10,5 @@ interface PlayerFileService {
     void delete(Serializable id)
     PlayerFile save(PlayerFile playerFile)
 
-    List<PlayerFile> findByOwner(User owner)
+    List<PlayerFile> listByOwner(User owner)
 }

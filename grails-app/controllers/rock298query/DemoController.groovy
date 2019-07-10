@@ -8,7 +8,7 @@ class DemoController {
     def jakeFiles() {
         def jake = userService.find('Jake')
 
-        def files = playerFileService.findByOwner(jake)
+        def files = playerFileService.listByOwner(jake)
 
         render files*.playersJson
     }
@@ -16,7 +16,7 @@ class DemoController {
     def jeffFiles() {
         def jeff = userService.find('Jeff')
 
-        def files = playerFileService.findByOwner(jeff)
+        def files = playerFileService.listByOwner(jeff)
 
         render files*.playersJson
     }
